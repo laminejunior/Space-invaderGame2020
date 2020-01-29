@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Espace de jeu</title>
+    <script src="js/game.js"></script>
+</head>
+<body onkeydown="touchesouris(event)" onclick="Son_des_interactions(event)">
+    <p id="score">Score : <span id="score2"></span></p>
+    <div id="nbreTir"></div>
+    <div id="debut">
+        <h1>Espace de Jeu</h1>
+        <button onclick="debutdujeu()">Jouer</button>
+    </div>
+    <div id="gagner">
+        <p>Cool vous avez Gagné!</p>
+        <h3 id='ntirsur'></h3>
+        <a href="Game.html">
+            <button onclick="debutdujeu()"> Niveau Suivant</button>
+        </a>
+    </div>
+    <div id="gameover">
+        <p>Fin du Jeu!</p>
+        <a href="Game.html">
+           <button onclick="debutdujeu()">Rejouer</button>
+        </a>
+    </div>
+    <script src="js/script.js"></script> 
+</body>
+</html>
